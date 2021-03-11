@@ -7,6 +7,7 @@ import React,{useState} from 'react'
 import ReactFlagsSelect from 'react-flags-select';
 import Individual from './components/individual'
 import Footer from './components/footer'
+import Example from './components/animation'
 
 
 function App() {
@@ -41,6 +42,7 @@ optionsSize={30}
 showSecondaryOptionLabel={true}
 onSelect={name => {setCountryName(name);
 setName(name)}}/> 
+<Example/>
    
    {countryName?
    <Countries 

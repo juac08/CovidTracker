@@ -150,7 +150,6 @@ function Individual({countryName}) {
          
         },
       };
-
   const options = {
     title: {
       display: true,

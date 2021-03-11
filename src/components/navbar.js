@@ -23,6 +23,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+      cursor: 'pointer',
+
     },
   },
   search: {
@@ -82,8 +84,8 @@ export default function SearchAppBar({name,setName,handleSubmit,handleClick}) {
           >
           <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Covid Tracker
+          <Typography className={classes.title} variant="h6" noWrap onClick={handleClick}>
+            Home
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

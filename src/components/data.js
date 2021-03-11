@@ -60,7 +60,7 @@ const FetchData = () => {
   className='c'
   />
   <p style={{color:'gray'}}>Currently Infected Patients</p>
-<h5>{new Date(data.lastUpdate).toDateString()}</h5>
+<h5>{new Date(data.lastUpdate).toLocaleString()}</h5>
       </div>
       <div className='card recovered'>
       <h3>Recovered</h3>
