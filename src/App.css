@@ -202,21 +202,13 @@ p {
     }
     .chart {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        place-items: center;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 .c {
     font-weight: bold;
     font-size: 1.5rem;
-}
-
-img {
-    width: 70%;
-    height: 200px;
-    border-radius: var(--radius);
-    box-shadow: var(--dark-shadow);
 }
 
 .card {
