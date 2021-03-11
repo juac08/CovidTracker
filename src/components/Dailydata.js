@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Bar, Line} from "react-chartjs-2";
 import { BounceLoader, BarLoader, BeatLoader } from "react-spinners";
 import { css } from "@emotion/react";
+import { CastForEducationSharp } from "@material-ui/icons";
 const loaderCSS = css`
   margin-top: 25px;
   margin-bottom: 25px;
@@ -43,7 +44,7 @@ function Dailydata() {
   if (!dailyData) {
     return setLoading(true);
   }
-  const y = dailyData.map((transaction) => (new Date(transaction.reportDate).toDateString()));
+  const y = dailyData.map((transaction) => (new Date(transaction.reportDate).toISOString().slice(0, 7)));
   const x = dailyData.map((transaction) => transaction.confirmed.total);
   const z = dailyData.map((transaction) => transaction.deaths.total);
 
@@ -90,7 +91,7 @@ function Dailydata() {
     const option = {
         title: {
           display: true,
-          text: 'Deaths tracker'
+          text: 'Deaths tracker',
         }
       }
 
