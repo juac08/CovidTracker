@@ -27,7 +27,6 @@ function Individual({countryName}) {
   useEffect(() => {
     getD();
   }, [countryName]);
-  console.log(dailyData)
   if (loading) {
     return (
       <div className="loading">

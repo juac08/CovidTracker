@@ -45,14 +45,14 @@ function Example() {
   }, [])
   
   return (
-    <header className='head'>
-      <artical className='container bg'>
+    <div className='head'>
+      <div className='container bg'>
       <h1 className='box b1'>Covid Tracker</h1>
       <div className="box b2" ref={container}></div>
       <div className="box b3" ref={container2}></div>      
       <div className="box b4" ref={container3}></div>
-      </artical>
-      </header>
+      </div>
+      </div>
    
   );
 }

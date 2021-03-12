@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Bar, Line} from "react-chartjs-2";
 import { BounceLoader, BarLoader, BeatLoader } from "react-spinners";
 import { css } from "@emotion/react";
-import { CastForEducationSharp } from "@material-ui/icons";
 const loaderCSS = css`
   margin-top: 25px;
   margin-bottom: 25px;
@@ -27,7 +26,6 @@ function Dailydata() {
   useEffect(() => {
     getDailyData();
   }, []);
-  console.log(dailyData);
   if (loading) {
     return (
       <div className="loading">
