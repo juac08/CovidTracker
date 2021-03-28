@@ -173,7 +173,7 @@ p {
     .container {
         background: rgb(90, 89, 87);
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         place-items: center;
         height: fit-content
     }
