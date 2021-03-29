@@ -27,6 +27,7 @@
         "react-icons": "^4.2.0",
         "react-lottie": "^1.2.3",
         "react-scripts": "4.0.2",
+        "react-service-worker": "^0.1.1",
         "react-spinners": "^0.10.6",
         "web-vitals": "^1.1.0",
         "workbox-background-sync": "^5.1.4",
